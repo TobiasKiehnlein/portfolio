@@ -13,4 +13,4 @@ jobs:
           reponame: 'portfolio'
           token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
           useyarn: true
-          cname: kiehnlein.de
+          cname: tobias.kiehnlein.de
