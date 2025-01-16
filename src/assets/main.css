@@ -1,0 +1,61 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100vh;
+    font-family: 'Gantari', sans-serif;
+    overflow-x: hidden;
+
+
+    #app {
+        margin-top: 10vh;
+    }
+}
+
+section {
+    min-height: 80vh;
+    scroll-snap-align: center;
+
+    @media screen and (max-width: 750px) {
+        min-height: 60vh;
+    }
+}
+
+[primary], .primary {
+    color: var(--color-primary)
+}
+
+[primary-bg], .primary-bg {
+    background-color: var(--color-primary);
+}
+
+[high-contrast], .high-contrast {
+    color: black;
+
+    @media (prefers-color-scheme: dark) {
+        color: white;
+    }
+}
+
+button {
+    font-family: 'Gantari', sans-serif;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    background-color: var(--color-primary);
+    color: white;
+
+    &:hover {
+        background-color: var(--color-primary-light);
+    }
+}
