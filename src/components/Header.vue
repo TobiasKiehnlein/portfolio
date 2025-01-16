@@ -48,6 +48,13 @@ header {
     border-radius: 9999999px;
     position: relative;
     transition: all .5s;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 651px) {
+      display: none;
+    }
 
     &.open {
       background: transparent;

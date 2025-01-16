@@ -8,7 +8,7 @@
     <h1 primary>Tobias Kiehnlein</h1>
     <h2>Full-stack Developer</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <button>Let's talk</button>
+    <a href="#contact"><button>Let's talk</button></a>
   </div>
 </template>
 
