@@ -20,11 +20,12 @@ body {
 }
 
 section {
-    min-height: 80vh;
-    scroll-snap-align: center;
+    /*min-height: 80vh;*/
+    min-width: min(80vw, 1000px);
+    padding: 150px 20px;
 
     @media screen and (max-width: 750px) {
-        min-height: 60vh;
+        /*min-height: 60vh;*/
     }
 }
 
