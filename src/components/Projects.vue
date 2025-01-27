@@ -110,7 +110,7 @@ const projects: Project[] = [
 </script>
 
 <template>
-  <section>
+  <section id="projects">
     <h2>Projekte</h2>
     <p>{{ introText }}</p>
 

@@ -25,7 +25,6 @@ import ProfilePicture from "@/components/ProfilePicture.vue";
   gap: 20px;
   grid-template-columns: auto auto;
   align-items: center;
-  max-width: 100vw;
 
   @media screen and (max-width: 650px) {
     grid-template-columns: auto;

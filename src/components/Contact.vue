@@ -36,7 +36,6 @@ p {
   gap: 20px;
   grid-template-columns: auto 1fr;
   align-items: center;
-  max-width: 100vw;
   padding: 20px;
 
   i {
