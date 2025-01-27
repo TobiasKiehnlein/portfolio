@@ -1,7 +1,7 @@
 <script setup lang="ts">
 interface Project {
   title: string;
-  technologies: string;
+  technologies?: string;
   description: string;
 }
 
@@ -46,8 +46,8 @@ const projects: Project[] = [
         "Im Rahmen der Weiterentwicklung von AWIDO, einer Plattform " +
         "im Bereich Abfallwirtschaft, war ich für neue Features und " +
         "die Implementierung automatisierter Deployment-Prozesse " +
-        "verantwortlich. Dadurch konnten über 50 Apps, die auf " +
-        "einer gemeinsamen Codebasis basieren, automatisiert " +
+        "verantwortlich. Dadurch konnten über 50 Apps, die " +
+        "eine gemeinsame Codebasis haben, automatisiert " +
         "im PlayStore und AppStore veröffentlicht werden."
   },
   {
@@ -80,8 +80,8 @@ const projects: Project[] = [
         "Gemeinsam mit meinem Team habe ich im Rahmen des Softwareprojektes an der " +
         "Universität eine Personalmanagement Software " +
         "entwickelt. " +
-        "Die Anwendung wurde mithilfe von Blazor entwickelt und " +
-        "wie in der Uni üblich nach \"Lehrbuch\"-Softwareentwicklungsprozessen." +
+        "Die Anwendung basierte auf Blazor und wurde, " +
+        "wie in der Uni üblich, mit \"Lehrbuch\"-Softwareentwicklungsprozessen entwickelt." +
         "Ich übernahm die Rolle des Projektleiters und " +
         "habe dabei sehr viel über die Leitung von Softwareprojekten gelernt, " +
         "was besonders durch das stark unterschiedliche Leistungsniveau im Team herausfordernd war."
@@ -93,15 +93,14 @@ const projects: Project[] = [
         "Neben der Web- und Softwareentwicklung interessiere ich " +
         "mich auch für Elektronik. Ich habe Platinen entworfen, selbst gefertigt und mit " +
         "C++ und Rust programmiert. Dies habe ich unter anderem für meine Bachelorarbeit gemacht, die ich " +
-        "im Bereich HCI absolvierte. In dieser habe ich einen funktionsfähigen " +
+        "im Bereich HCI (Human Computer Interaction) absolvierte. In dieser habe ich einen funktionsfähigen " +
         "Prototyp für ein Pflanzenpflegesystem auf UWB- und ESP32-Basis " +
-        "entwickelt. Diese Hardwareprojekte verbinden mein Interesse " +
+        "entwickelt. Solche Hardwareprojekte verbinden mein Interesse " +
         "an IoT-Lösungen mit einer praktischen Umsetzung in Form " +
         "selbstgebauter Prototypen."
   },
   {
     title: "8. Sonstiges",
-    technologies: "-",
     description:
         "Neben den genannten Projekten gibt es noch viele weitere. " +
         "Inzwischen übernehme ich auch im beruflichen Umfeld " +
@@ -121,10 +120,12 @@ const projects: Project[] = [
     >
       <h3>{{ project.title }}</h3>
       <p>
-        <strong>Technologien:</strong>
-        {{ project.technologies }}
-        <br>
-        <strong>Beschreibung:</strong>
+        <template v-if="project.technologies">
+          <strong>Technologien:</strong>
+          {{ project.technologies }}
+          <br>
+          <strong>Beschreibung:</strong>
+        </template>
         {{ project.description }}
       </p>
     </article>

@@ -6,7 +6,7 @@
   <section id="about" class="grid horizontal high-contrast">
     <h2>Über mich</h2>
     <div>
-      <p class="tldr">tl;dr: Ich programmiere seit ich denken kann und liebe es Zeug zu automatisieren.</p>
+      <p class="tldr">tl;dr: Ich programmiere seit ich denken kann und liebe es, Zeug zu automatisieren.</p>
       <div>
         <p>
           Seit ich denken kann, fasziniert mich die Softwareentwicklung.
@@ -27,7 +27,7 @@
           <b>React Native</b> und <b>Expo</b> entwickelte
           Anwendung diente als umfassende Schul-App zur Verwaltung von
           Vertretungsplänen, Hausaufgaben und Stundenausfällen.
-          Durch die Zusammenarbeit mit <strong>Fujitsu</strong> führte dieses Projekt
+          Durch die Zusammenarbeit mit <strong>Fujitsu</strong> führte das Projekt
           unter anderem zum Gewinn des <strong>SCHULEWIRTSCHAFTPREISES 2018</strong>.
         </p>
 
