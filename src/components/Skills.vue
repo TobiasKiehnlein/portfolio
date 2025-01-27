@@ -29,7 +29,12 @@ const entries = {
     {name: 'GitHub Actions', icon: 'github.svg', skill: 5},
     {name: 'Ansible', icon: 'ansible.svg', skill: 4},
     {name: 'fastlane', icon: 'fastlane.svg', skill: 4.5},
-  ]
+  ],
+  'Operating Systems': [
+    {name: 'Linux', icon: 'linux-tux.svg', skill: 5},
+    {name: 'macOS', icon: 'mac-os.svg', skill: 5},
+    {name: 'Windows', icon: 'windows.svg', skill: 4.5},
+  ],
 }
 </script>
 
@@ -59,6 +64,7 @@ const entries = {
 
   h3 {
     margin-top: 20px;
+    color: var(--color-heading);
   }
 
   ul {

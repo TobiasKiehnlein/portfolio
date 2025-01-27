@@ -6,12 +6,12 @@ import ProfilePicture from "@/components/ProfilePicture.vue";
 <template>
   <section id="home" class="grid horizontal high-contrast inverted">
     <div>
-      <span class="top-line">Hello, <span primary>I'm</span></span>
+      <span class="top-line">Hallo, <span primary>ich bin</span></span>
       <h1 primary>Tobias Kiehnlein</h1>
-      <h2>Full-stack Developer</h2>
-      <p>Passion for modern web development and automation.</p>
+      <h2>Full-stack Softwareentwickler</h2>
+      <p>Leidenschaft für moderne Webentwicklung und Automatisierung.</p>
       <a href="#contact">
-        <button>Let's talk</button>
+        <button>Lass uns reden!</button>
       </a>
     </div>
     <ProfilePicture/>
@@ -39,6 +39,7 @@ import ProfilePicture from "@/components/ProfilePicture.vue";
 }
 
 h1 {
+  color: var(--color-heading);
   font-size: 3em;
   font-weight: bold;
   filter: drop-shadow(0px 0px 3px var(--color-background));
@@ -63,6 +64,7 @@ div {
 }
 
 div, h2 {
+  color: var(--color-heading);
   font-weight: bold;
 }
 
