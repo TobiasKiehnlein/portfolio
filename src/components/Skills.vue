@@ -9,6 +9,7 @@ const entries = {
     {name: 'Vue.js', icon: 'vue.svg', skill: 4.5},
     {name: 'React', icon: 'react.svg', skill: 4.5},
     {name: 'Angular', icon: 'angular.svg', skill: 4.5},
+    {name: 'Ionic', icon: 'ionic.svg', skill: 4.5},
   ],
   Backend: [
     {name: 'Node.js', icon: 'nodejs.svg', skill: 4.5},
