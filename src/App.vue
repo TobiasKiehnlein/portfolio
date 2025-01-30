@@ -17,8 +17,6 @@ import Projects from "@/components/Projects.vue";
 </template>
 
 <style scoped lang="scss">
-main {
-  padding: 20px;
-  overflow: visible;
-}
+
+
 </style>
