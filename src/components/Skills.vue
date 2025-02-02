@@ -35,6 +35,8 @@ const entries = {
     {name: 'Linux', icon: 'linux-tux.svg', skill: 5},
     {name: 'macOS', icon: 'mac-os.svg', skill: 5},
     {name: 'Windows', icon: 'windows.svg', skill: 4.5},
+    {name: 'Android', icon: 'android.svg', skill: 5},
+    {name: 'iOS', icon: 'iOS.svg', skill: 4.5},
   ],
 }
 </script>
