@@ -86,12 +86,17 @@
     }
   }
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  img  {
+    width: 110%;
+    height: 110%;
+    object-fit: contain;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    transform: scaleX(-1);
+    //transform: scaleX(-1);
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    right: -50%;
+    margin: auto;
   }
 }
 
